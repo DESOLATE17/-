@@ -22,20 +22,23 @@ def get_coef(index, prompt):
     try:
         # Пробуем прочитать коэффициент из командной строки
         coef_str = sys.argv[index]
+        # Переводим строку в действительное число
         coef = float(coef_str)
         flag = True
     except:
         flag = False
-        # Вводим с клавиатуры
         while flag == False:
             try:
+                 # просим пользователя заново ввести коэффициент
                 print(prompt)
+                 # заново считываем коэффициент  
                 coef_str = input()
+                 # Переводим строку в действительное число
                 coef = float(coef_str)
                 flag = True
             except:
                 flag = False
-    # Переводим строку в действительное число
+   
     
     return coef
 
@@ -52,7 +55,7 @@ def get_roots(a, b, c):
     Returns:
         list[float]: Список корней
     '''
-    result = []
+    result = [] 
     if a == 0:
         if b != 0 and -c/b >= 0:
             result.append(-c/b)
@@ -73,6 +76,10 @@ def get_roots(a, b, c):
     return result
 
 def count_roots (roots):
+    '''
+    Определение корней для первоначального уравнения на основе
+     полученных корней при замене и переходе к квадратному уравнению
+    '''
     result = []
     for i in range (0,len(roots), 1):
         if (roots[i] != 0):
