@@ -19,4 +19,3 @@ class FigureColor:
         Set-аксессор
         """
         self._color = value
-Footer

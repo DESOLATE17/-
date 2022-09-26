@@ -26,3 +26,14 @@ class Rectangle(Figure):
         Класс должен переопределять метод, вычисляющий площадь фигуры.
         """
         return self.width*self.height
+    
+    def __repr__(self):
+        return '{} {} цвета шириной {} и высотой {} площадью {}.'.format(
+            Rectangle.get_figure_type(),
+            self.fc.colorproperty,
+            self.width,
+            self.height,
+            self.square()
+        )
+
+    
