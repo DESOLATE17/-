@@ -17,12 +17,13 @@ def field(items, *args):
             s = result.popitem()
             s = "'" + str(s[1]) + "'" 
             print(s)
+            #yield s 
         else :
             print(result)
+            #yield result     
     
     
-
 goods = [{'title': 'Ковер', 'price': 2000, 'color': 'green'},
     {'title': 'Диван для отдыха', 'price': 5300, 'color': 'black'}]
-field(goods, 'title') 
+field(goods, 'title')
 field(goods, 'price', 'title') 
