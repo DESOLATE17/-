@@ -16,14 +16,15 @@ def field(items, *args):
         if len(result) == 1:
             s = result.popitem()
             s = "'" + str(s[1]) + "'" 
-            print(s)
-            #yield s 
+            yield s 
         else :
-            print(result)
-            #yield result     
+            yield result     
     
     
 goods = [{'title': 'Ковер', 'price': 2000, 'color': 'green'},
     {'title': 'Диван для отдыха', 'price': 5300, 'color': 'black'}]
-field(goods, 'title')
-field(goods, 'price', 'title') 
+for i in field(goods, 'title'):
+    print(i)
+for i in field(goods, 'price', 'title'):
+    print(i)
+

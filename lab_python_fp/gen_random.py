@@ -5,6 +5,6 @@ import random
 # Hint: типовая реализация занимает 2 строки
 def gen_random(num_count, begin, end):
     for i in range (0, num_count, 1):
-        print (random.randint(begin, end)) 
+        yield (random.randint(begin, end)) 
 
-gen_random(5, 1, 3)
+#gen_random(5, 1, 3)
