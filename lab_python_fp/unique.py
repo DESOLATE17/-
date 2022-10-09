@@ -27,6 +27,9 @@ class Unique(object):
     def __iter__(self):
         return self
 
+
+print("1st test")
+
 data = ['a', 'A', 'b', 'B', 'a', 'A', 'b', 'B']
 
 t = Unique(data, ignore_case = True)
