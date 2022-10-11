@@ -10,6 +10,7 @@ def print_result(func):
                 print(f'''{key} = {res[key]}''')
         else:
             print(res)
+        return res
     return inner
 
 @print_result

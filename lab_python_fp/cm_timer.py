@@ -1,5 +1,6 @@
 from contextlib import contextmanager
 import time
+from unicodedata import name
 
 @contextmanager
 def cm_timer_1():
@@ -15,10 +16,12 @@ class cm_timer_2:
     def __exit__(self, type, value, traceback):
         print("time: ", time.time() - self.start_time)
 
-with cm_timer_1():
-    time.sleep(5.5)
+if __name__ == "__main__":
 
-with cm_timer_2():
-    time.sleep(5.5)
+    with cm_timer_1():
+        time.sleep(5.5)
+
+    with cm_timer_2():
+        time.sleep(5.5)
 
 

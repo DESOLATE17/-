@@ -19,7 +19,7 @@ class Unique(object):
 
     def __next__(self):
         if len(self.seen) == 0:
-            return StopIteration
+            raise StopIteration
         item = self.seen[0]
         del self.seen[0]
         return item
@@ -27,34 +27,34 @@ class Unique(object):
     def __iter__(self):
         return self
 
+if __name__ == '__main__':
+    print("1st test")
 
-print("1st test")
+    data = ['a', 'A', 'b', 'B', 'a', 'A', 'b', 'B']
 
-data = ['a', 'A', 'b', 'B', 'a', 'A', 'b', 'B']
+    t = Unique(data, ignore_case = True)
 
-t = Unique(data, ignore_case = True)
+    print(next(t))
+    print(next(t))
 
-print(next(t))
-print(next(t))
-
-#print(next(t))
-
-
-print("2nd test")
-
-data = [1,1,1,1,1,1,2,2,2,2,2,2]
-
-t = Unique(data)
-
-print(next(t))
-print(next(t))
+    #print(next(t))
 
 
-print("3rd test")
-data = gen_random.gen_random(10, 1, 3)
+    print("2nd test")
 
-t = Unique(data)
+    data = [1,1,1,1,1,1,2,2,2,2,2,2]
 
-print(next(t))
-print(next(t))
-print(next(t))
+    t = Unique(data)
+
+    print(next(t))
+    print(next(t))
+
+
+    print("3rd test")
+    data = gen_random.gen_random(10, 1, 3)
+
+    t = Unique(data)
+
+    print(next(t))
+    print(next(t))
+    print(next(t))
