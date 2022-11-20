@@ -56,10 +56,7 @@ def query_handler(call):
                     res2.append(s[key]) 
                 else:
                     res1.append(s[key])
-                    res2.append(s[key])
-            #print(res1)
-            #print()
-            #print(res2)       
+                    res2.append(s[key])      
             if len(res1) > 1:
                 ch_r.append(res1)
             if len(res2) > 1:
@@ -80,7 +77,4 @@ def query_handler(call):
     answer = 'Выбери день недели' 
     bot.send_message(call.message.chat.id, answer, reply_markup=markup2)
     
-
-
 bot.infinity_polling()
-
