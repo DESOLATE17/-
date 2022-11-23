@@ -14,4 +14,3 @@ class States(Enum):
     STATE_START = "STATE_START"  # Начало нового диалога
     STATE_GROUP = "STATE_GROUP"
     STATE_DAY = "STATE_DAY"
-    #STATE_OPERATION = "STATE_"
