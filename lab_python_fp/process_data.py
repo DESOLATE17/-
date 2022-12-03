@@ -6,18 +6,10 @@ from print_result import print_result
 import cm_timer
 from field import field
 
-# Сделаем другие необходимые импорты
-
 path = '/home/dasha/Desktop/BIKT/BIKT/lab_python_fp/data_light.json'
-
-# Необходимо в переменную path сохранить путь к файлу, который был передан при запуске сценария
 
 with open(path) as f:
     data = json.load(f)
-
-# Далее необходимо реализовать все функции по заданию, заменив `raise NotImplemented`
-# Предполагается, что функции f1, f2, f3 будут реализованы в одну строку
-# В реализации функции f4 может быть до 3 строк
 
 @print_result
 def f1(arg):
