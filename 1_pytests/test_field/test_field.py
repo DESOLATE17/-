@@ -1,10 +1,3 @@
-# Пример:
-# goods = [
-#    {'title': 'Ковер', 'price': 2000, 'color': 'green'},
-#    {'title': 'Диван для отдыха', 'price': 5300, 'color': 'black'}
-# ]
-# field(goods, 'title') должен выдавать 'Ковер', 'Диван для отдыха'
-# field(goods, 'title', 'price') должен выдавать {'title': 'Ковер', 'price': 2000}, {'title': 'Диван для отдыха', 'price': 5300}
 import pytest
 
 def field(items, *args):
