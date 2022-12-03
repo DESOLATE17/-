@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return ""
+    return "Генератор простых чисел"
 
 
 @app.route('/<int:n>')
