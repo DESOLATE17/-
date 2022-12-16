@@ -35,7 +35,9 @@ class DetMan:
         self.det_id = det_id
         self.man_id = man_id
  
+
 # Производитель
+
 man = [
     Manufacturer(1, "Гидросталь"),
     Manufacturer(2, "Россталь"),
@@ -55,7 +57,7 @@ det = [
     Detail(6, "Шпонка2", 5, 40)
 ]
 
-mans_dets = [
+men_dets = [
     DetMan(1,1),
     DetMan(2,2),
     DetMan(3,3),
@@ -67,26 +69,13 @@ mans_dets = [
     DetMan(4,4),
     DetMan(6,5),
 ]
- 
-def main():
-    
+
+def task1 (man, det):
     one_to_many = [(d.name, m.name, d.price) 
         for m in man 
         for d in det 
         if d.man_id == m.id]
-    
-    
-    many_to_many_temp = [(m.name, md.det_id, md.man_id) 
-        for m in man
-        for md in mans_dets
-        if m.id == md.man_id]
-    
-    many_to_many = [(man_name, d.name, d.price) 
-        for man_name, det_id, _ in many_to_many_temp
-        for d in det if d.id == det_id]
-    
- 
-    print('Задание Г1')
+
     res_1 = {}
     for i in one_to_many:
         if i[1][0] == 'А':
@@ -94,19 +83,25 @@ def main():
                 res_1[i[1]] = [i[0]]
             else: 
                 res_1[i[1]].append(i[0])
-    print(res_1)
-   
-    print('\nЗадание Г2')
+    return res_1
+
+def task2 (man, det):
     res_2 = []
     for m in man:
         det_tmp = list((m.name, d.price) for d in det if d.man_id == m.id)
         if len(det_tmp) > 0: 
             res_2. append(max(det_tmp, key = lambda i: i[1]))
     tmp = sorted(res_2, key = itemgetter(1), reverse = True)
-    print(tmp)
-    
-    print('\nЗадание Г3')
-    print(sorted(many_to_many, key = lambda i: i[0]))
+    return tmp
 
-if __name__ == '__main__':
-    main()
+def task3 (man, det, men_dets):
+    many_to_many_temp = [(m.name, md.det_id, md.man_id) 
+        for m in man
+        for md in men_dets
+        if m.id == md.man_id]
+    
+    many_to_many = [(man_name, d.name, d.price) 
+        for man_name, det_id, _ in many_to_many_temp
+        for d in det if d.id == det_id]
+
+    return sorted(many_to_many, key = lambda i: i[0])
