@@ -2,7 +2,7 @@
 import os
 import telebot
 from telebot import types
-from parser import parse_user_datafile_bs
+from parser_1 import parse_user_datafile_bs
 
 
 # Токент бота
