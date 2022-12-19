@@ -34,41 +34,6 @@ class DetMan:
     def __init__(self, det_id, man_id):
         self.det_id = det_id
         self.man_id = man_id
- 
-
-# Производитель
-
-man = [
-    Manufacturer(1, "Гидросталь"),
-    Manufacturer(2, "Россталь"),
-    Manufacturer(3, "Эргон"),
-    Manufacturer(4, "Авток"),
-    Manufacturer(5, "Арстат")
-]
-
-# Детали
-
-det = [
-    Detail(1, "штуцер", 1, 100),
-    Detail(2, "Винт", 2, 50),
-    Detail(3, "Втулка", 4, 70),
-    Detail(4, "Шпонка", 3, 110),
-    Detail(5, "Пружина", 4, 45),
-    Detail(6, "Шпонка2", 5, 40)
-]
-
-men_dets = [
-    DetMan(1,1),
-    DetMan(2,2),
-    DetMan(3,3),
-    DetMan(3,4),
-    DetMan(3,5),
-    DetMan(4,1),
-    DetMan(5,2),
-    DetMan(5,3),
-    DetMan(4,4),
-    DetMan(6,5),
-]
 
 def task1 (man, det):
     one_to_many = [(d.name, m.name, d.price) 
