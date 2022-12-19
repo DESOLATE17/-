@@ -43,21 +43,201 @@
             }
             prevUrl === targetRoute ? window.history.back() : location.href = targetRoute;
         }
-        Portal3.setTitle(`Расписание ИУ5-35Б`)
+        Portal3.setTitle(`Расписание ИУ5-31Б`)
     </script>
     <div class="row">
         <div class="col-md-8">
             <div class="page-header">
                 <a onclick="goToList()" ><h3 type="button" class="text-primary">← К полному расписанию</h3></a>
-                <h1>Расписание ИУ5-35Б
-                        <small><a href="/schedule/a9a1cbe6-81ca-11eb-b2e0-005056960017.ics"><span class="fa fa-calendar"></span> Сохранить в календарь</a></small>
+                <h1>Расписание ИУ5-31Б
+                        <small><a href="/schedule/a98e624a-81ca-11eb-9739-005056960017.ics"><span class="fa fa-calendar"></span> Сохранить в календарь</a></small>
                 </h1>
-                    <h4><i>13 неделя, числитель</i></h4>
+                    <h4><i>17 неделя, числитель</i></h4>
             </div>
         </div>
         <div class="clearfix"></div>
     
-    
+            <!-- exams.hbs -->
+                <link rel="stylesheet" href="/static/css/flickity.min.css">
+                <script src="/static/js/flickity.pkgd.min.js"></script>
+              
+                    <div class="col-md-12 d-none d-sm-block">
+                        <table class="table table-striped table-bordered ">
+                            <thead>
+                                <tr class="bg-warning">
+                                    <th scope="col">Событие</th>
+                                    <th scope="col">Дата</th>
+                                    <th scope="col">Кабинет</th>
+                                    <th scope="col">Предмет</th>
+                                    <th scope="col">Преподаватель</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Экзамен</td>
+                                    <td>9:00 11.01.2023</td>
+                                    <td>
+                                            <nobr>829л</nobr>
+                                            <br/>
+                                    </td>
+                                    <td>Электротехника</td>
+                                    <td>
+                                            <nobr>Михаил Владимирович Белодедов</nobr>
+                                            <br/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Экзамен</td>
+                                    <td>14:00 16.01.2023</td>
+                                    <td>
+                                            <nobr>619л</nobr>
+                                            <br/>
+                                    </td>
+                                    <td>Теория вероятностей и математическая статистика</td>
+                                    <td>
+                                            <nobr>Николай Владимирович Безверхний</nobr>
+                                            <br/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Экзамен</td>
+                                    <td>9:00 20.01.2023</td>
+                                    <td>
+                                            <nobr>615л</nobr>
+                                            <br/>
+                                    </td>
+                                    <td>Архитектура автоматизированных систем обработки информации и управления</td>
+                                    <td>
+                                            <nobr>Владимир Павлович Шук</nobr>
+                                            <br/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Экзамен</td>
+                                    <td>9:00 24.01.2023</td>
+                                    <td>
+                                            <nobr>304</nobr>
+                                            <br/>
+                                    </td>
+                                    <td>Физика</td>
+                                    <td>
+                                            <nobr>Елена Владимировна Корогодина</nobr>
+                                            <br/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-sm-12 d-block d-sm-none">
+                        <div class="carousel" data-flickity='{ "cellAlign": "center", "contain": false }'>
+                                <div class="carousel-cell">
+                                    <div class="card border-warning">
+                                        <div class="card-header bg-warning">
+                                            <div class="row justify-content-between mt-1">
+                                                <p class="font-weight-bold col-5">Экзамен</p>
+                                                <p class="text-right font-italic col-5">9:00 11.01.2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title font-italic">
+                                                    <nobr>829л</nobr>
+                                            </h5>
+                                            <div class="card-text font-weight-bold">
+                                                Электротехника 
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                                Михаил Владимирович Белодедов
+                                                <br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-cell">
+                                    <div class="card border-warning">
+                                        <div class="card-header bg-warning">
+                                            <div class="row justify-content-between mt-1">
+                                                <p class="font-weight-bold col-5">Экзамен</p>
+                                                <p class="text-right font-italic col-5">14:00 16.01.2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title font-italic">
+                                                    <nobr>619л</nobr>
+                                            </h5>
+                                            <div class="card-text font-weight-bold">
+                                                Теория вероятностей и математическая статистика 
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                                Николай Владимирович Безверхний
+                                                <br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-cell">
+                                    <div class="card border-warning">
+                                        <div class="card-header bg-warning">
+                                            <div class="row justify-content-between mt-1">
+                                                <p class="font-weight-bold col-5">Экзамен</p>
+                                                <p class="text-right font-italic col-5">9:00 20.01.2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title font-italic">
+                                                    <nobr>615л</nobr>
+                                            </h5>
+                                            <div class="card-text font-weight-bold">
+                                                Архитектура автоматизированных систем обработки информации и управления 
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                                Владимир Павлович Шук
+                                                <br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-cell">
+                                    <div class="card border-warning">
+                                        <div class="card-header bg-warning">
+                                            <div class="row justify-content-between mt-1">
+                                                <p class="font-weight-bold col-5">Экзамен</p>
+                                                <p class="text-right font-italic col-5">9:00 24.01.2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title font-italic">
+                                                    <nobr>304</nobr>
+                                            </h5>
+                                            <div class="card-text font-weight-bold">
+                                                Физика 
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                                Елена Владимировна Корогодина
+                                                <br>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <style>
+                            .carousel-cell {
+                                width: 85%; /* half-width */
+                                height: auto;
+                                margin-right: 10px;
+                                margin-bottom: 20px;
+                            }
+                            .flickity-page-dots {
+                                display: none;
+                            }
+                            .flickity-button {
+                                display: none;
+                            };
+                        </style>
+                        <script>
+                            var flkty = new Flickity('.carousel');
+                            flkty.select( 0 );
+                        </script>
+                    </div>
     
                 <!--Десктопная версия -->
                 <div class="col-lg-6 d-none d-md-block">
@@ -83,23 +263,23 @@
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">12:00 - 13:35 </td> 
-                                    <td class="text-info-bold"> </td>
+                                    <td class="text-info-bold"><i>(лаб)</i> <span>Модели данных</span> <i>306.2э</i> <i></i>  </td>
                                     <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">13:50 - 15:25 </td> 
-                                    <td class="text-info-bold"> </td>
+                                    <td class="text-info-bold"><i>(лаб)</i> <span>Модели данных</span> <i>306.2э</i> <i></i>  </td>
                                     <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">15:40 - 17:15 </td> 
-                                    <td class="text-info-bold"><i>(лаб)</i> <span>Базовые компоненты интернет-технологий</span> <i>каф. ИУ5</i> <i></i>  </td>
-                                    <td class="text-primary"><i>(лаб)</i> <span>Модели данных</span> <i>306.2э</i> <i></i>  </td>
+                                    <td class="text-info-bold"><i>(лаб)</i> <span>Базовые компоненты интернет-технологий</span> <i>306.5э</i> <i></i>  </td>
+                                    <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">17:25 - 19:00 </td> 
-                                    <td class="text-info-bold"><i>(лаб)</i> <span>Базовые компоненты интернет-технологий</span> <i>каф. ИУ5</i> <i></i>  </td>
-                                    <td class="text-primary"><i>(лаб)</i> <span>Модели данных</span> <i>306.2э</i> <i></i>  </td>
+                                    <td class="text-info-bold"><i>(лаб)</i> <span>Базовые компоненты интернет-технологий</span> <i>306.5э</i> <i></i>  </td>
+                                    <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">19:10 - 20:45 </td> 
@@ -134,23 +314,23 @@
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">12:00<br />13:35</td>
-                                    <td class="text-info-bold"> </td>
+                                    <td class="text-info-bold"><i>(лаб)</i> <span>Модели данных</span> <i>306.2э</i> <i></i>  </td>
                                     <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">13:50<br />15:25</td>
-                                    <td class="text-info-bold"> </td>
+                                    <td class="text-info-bold"><i>(лаб)</i> <span>Модели данных</span> <i>306.2э</i> <i></i>  </td>
                                     <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">15:40<br />17:15</td>
-                                    <td class="text-info-bold"><i>(лаб)</i> <span>Базовые компоненты интернет-технологий</span> <i>каф. ИУ5</i> <i></i>  </td>
-                                    <td class="text-primary"><i>(лаб)</i> <span>Модели данных</span> <i>306.2э</i> <i></i>  </td>
+                                    <td class="text-info-bold"><i>(лаб)</i> <span>Базовые компоненты интернет-технологий</span> <i>306.5э</i> <i></i>  </td>
+                                    <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">17:25<br />19:00</td>
-                                    <td class="text-info-bold"><i>(лаб)</i> <span>Базовые компоненты интернет-технологий</span> <i>каф. ИУ5</i> <i></i>  </td>
-                                    <td class="text-primary"><i>(лаб)</i> <span>Модели данных</span> <i>306.2э</i> <i></i>  </td>
+                                    <td class="text-info-bold"><i>(лаб)</i> <span>Базовые компоненты интернет-технологий</span> <i>306.5э</i> <i></i>  </td>
+                                    <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">19:10<br />20:45</td>
@@ -190,13 +370,12 @@
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">13:50 - 15:25 </td> 
-                                    <td class="text-info-bold"><i>(сем)</i> <span>Экология</span> <i>713л</i> <i>Титов Е. В.</i>  </td>
-                                    <td class="text-primary"> </td>
+                                    <td colspan="2"><i>(сем)</i> <span>Иностранный язык</span> <i>каф. Л2</i> <i></i>  </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">15:40 - 17:15 </td> 
-                                    <td class="text-info-bold"><i>(сем)</i> <span>Правоведение</span> <i>615л</i> <i></i>  </td>
-                                    <td class="text-primary"> </td>
+                                    <td class="text-info-bold"><i>(сем)</i> <span>Экология</span> <i>259л</i> <i>Титов Е. В.</i>  </td>
+                                    <td class="text-primary"><i>(сем)</i> <span>Электротехника</span> <i>529л</i> <i>Белодедов М. В.</i>  </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">17:25 - 19:00 </td> 
@@ -205,7 +384,7 @@
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">19:10 - 20:45 </td> 
-                                    <td colspan="2"><i>(сем)</i> <span>Иностранный язык</span> <i>каф. Л2</i> <i></i>  </td>
+                                    <td colspan="2"><i>(лаб)</i> <span>Электротехника</span> <i>215м</i> <i></i>  </td>
                             </tr>
                         </tbody>
                     </table>
@@ -240,13 +419,12 @@
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">13:50<br />15:25</td>
-                                    <td class="text-info-bold"><i>(сем)</i> <span>Экология</span> <i>713л</i> <i>Титов Е. В.</i>  </td>
-                                    <td class="text-primary"> </td>
+                                    <td colspan="2"><i>(сем)</i> <span>Иностранный язык</span> <i>каф. Л2</i> <i></i>  </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">15:40<br />17:15</td>
-                                    <td class="text-info-bold"><i>(сем)</i> <span>Правоведение</span> <i>615л</i> <i></i>  </td>
-                                    <td class="text-primary"> </td>
+                                    <td class="text-info-bold"><i>(сем)</i> <span>Экология</span> <i>259л</i> <i>Титов Е. В.</i>  </td>
+                                    <td class="text-primary"><i>(сем)</i> <span>Электротехника</span> <i>529л</i> <i>Белодедов М. В.</i>  </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">17:25<br />19:00</td>
@@ -255,7 +433,7 @@
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">19:10<br />20:45</td>
-                                    <td colspan="2"><i>(сем)</i> <span>Иностранный язык</span> <i>каф. Л2</i> <i></i>  </td>
+                                    <td colspan="2"><i>(лаб)</i> <span>Электротехника</span> <i>215м</i> <i></i>  </td>
                             </tr>
                         </tbody>
                     </table>
@@ -293,12 +471,12 @@
                             <tr>
                                 <td class="bg-grey text-nowrap">15:40 - 17:15 </td> 
                                     <td class="text-info-bold"> </td>
-                                    <td class="text-primary"><i>(лаб)</i> <span>Электротехника</span> <i>306.2э</i> <i></i>  </td>
+                                    <td class="text-primary"><i>(лаб)</i> <span>Физика</span> <i>каф. ФН4</i> <i></i>  </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">17:25 - 19:00 </td> 
                                     <td class="text-info-bold"> </td>
-                                    <td class="text-primary"><i>(лаб)</i> <span>Электротехника</span> <i>306.2э</i> <i></i>  </td>
+                                    <td class="text-primary"><i>(лаб)</i> <span>Физика</span> <i>каф. ФН4</i> <i></i>  </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">19:10 - 20:45 </td> 
@@ -341,12 +519,12 @@
                             <tr>
                                 <td class="bg-grey text-nowrap">15:40<br />17:15</td>
                                     <td class="text-info-bold"> </td>
-                                    <td class="text-primary"><i>(лаб)</i> <span>Электротехника</span> <i>306.2э</i> <i></i>  </td>
+                                    <td class="text-primary"><i>(лаб)</i> <span>Физика</span> <i>каф. ФН4</i> <i></i>  </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">17:25<br />19:00</td>
                                     <td class="text-info-bold"> </td>
-                                    <td class="text-primary"><i>(лаб)</i> <span>Электротехника</span> <i>306.2э</i> <i></i>  </td>
+                                    <td class="text-primary"><i>(лаб)</i> <span>Физика</span> <i>каф. ФН4</i> <i></i>  </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">19:10<br />20:45</td>
@@ -376,18 +554,16 @@
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">10:15 - 11:50 </td> 
-                                    <td class="text-info-bold"> </td>
-                                    <td class="text-primary"> </td>
+                                    <td colspan="2"><i>(сем)</i> <span>Элективный курс по физической культуре и спорту</span> <i>каф. ФВ</i> <i></i>  </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">12:00 - 13:35 </td> 
-                                    <td class="text-info-bold"> </td>
-                                    <td class="text-primary"> </td>
+                                    <td class="text-info-bold"><i>(сем)</i> <span>Правоведение</span> <i>615л</i> <i></i>  </td>
+                                    <td class="text-primary"><i>(сем)</i> <span>Физика</span> <i>534л</i> <i></i>  </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">13:50 - 15:25 </td> 
-                                    <td class="text-info-bold"> </td>
-                                    <td class="text-primary"><i>(сем)</i> <span>Физика</span> <i>259л</i> <i></i>  </td>
+                                    <td colspan="2"><i>(сем)</i> <span>Теория вероятностей и математическая статистика</span> <i>830л</i> <i></i>  </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">15:40 - 17:15 </td> 
@@ -427,18 +603,16 @@
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">10:15<br />11:50</td>
-                                    <td class="text-info-bold"> </td>
-                                    <td class="text-primary"> </td>
+                                    <td colspan="2"><i>(сем)</i> <span>Элективный курс по физической культуре и спорту</span> <i>каф. ФВ</i> <i></i>  </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">12:00<br />13:35</td>
-                                    <td class="text-info-bold"> </td>
-                                    <td class="text-primary"> </td>
+                                    <td class="text-info-bold"><i>(сем)</i> <span>Правоведение</span> <i>615л</i> <i></i>  </td>
+                                    <td class="text-primary"><i>(сем)</i> <span>Физика</span> <i>534л</i> <i></i>  </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">13:50<br />15:25</td>
-                                    <td class="text-info-bold"> </td>
-                                    <td class="text-primary"><i>(сем)</i> <span>Физика</span> <i>259л</i> <i></i>  </td>
+                                    <td colspan="2"><i>(сем)</i> <span>Теория вероятностей и математическая статистика</span> <i>830л</i> <i></i>  </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">15:40<br />17:15</td>
@@ -478,7 +652,7 @@
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">10:15 - 11:50 </td> 
-                                    <td class="text-info-bold"><i>(сем)</i> <span>Электротехника</span> <i>427ю</i> <i>Белодедов М. В.</i>  </td>
+                                    <td class="text-info-bold"> </td>
                                     <td class="text-primary"> </td>
                             </tr>
                             <tr>
@@ -492,12 +666,12 @@
                             <tr>
                                 <td class="bg-grey text-nowrap">15:40 - 17:15 </td> 
                                     <td class="text-info-bold"> </td>
-                                    <td class="text-primary"><i>(лаб)</i> <span>Физика</span> <i>каф. ФН4</i> <i></i>  </td>
+                                    <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">17:25 - 19:00 </td> 
                                     <td class="text-info-bold"> </td>
-                                    <td class="text-primary"><i>(лаб)</i> <span>Физика</span> <i>каф. ФН4</i> <i></i>  </td>
+                                    <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">19:10 - 20:45 </td> 
@@ -527,7 +701,7 @@
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">10:15<br />11:50</td>
-                                    <td class="text-info-bold"><i>(сем)</i> <span>Электротехника</span> <i>427ю</i> <i>Белодедов М. В.</i>  </td>
+                                    <td class="text-info-bold"> </td>
                                     <td class="text-primary"> </td>
                             </tr>
                             <tr>
@@ -541,12 +715,12 @@
                             <tr>
                                 <td class="bg-grey text-nowrap">15:40<br />17:15</td>
                                     <td class="text-info-bold"> </td>
-                                    <td class="text-primary"><i>(лаб)</i> <span>Физика</span> <i>каф. ФН4</i> <i></i>  </td>
+                                    <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">17:25<br />19:00</td>
                                     <td class="text-info-bold"> </td>
-                                    <td class="text-primary"><i>(лаб)</i> <span>Физика</span> <i>каф. ФН4</i> <i></i>  </td>
+                                    <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">19:10<br />20:45</td>
@@ -579,11 +753,13 @@
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">12:00 - 13:35 </td> 
-                                    <td colspan="2"><i>(сем)</i> <span>Теория вероятностей и математическая статистика</span> <i>1013л</i> <i></i>  </td>
+                                    <td class="text-info-bold"> </td>
+                                    <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">13:50 - 15:25 </td> 
-                                    <td colspan="2"><i>(сем)</i> <span>Элективный курс по физической культуре и спорту</span> <i>каф. ФВ</i> <i></i>  </td>
+                                    <td class="text-info-bold"> </td>
+                                    <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">15:40 - 17:15 </td> 
@@ -626,11 +802,13 @@
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">12:00<br />13:35</td>
-                                    <td colspan="2"><i>(сем)</i> <span>Теория вероятностей и математическая статистика</span> <i>1013л</i> <i></i>  </td>
+                                    <td class="text-info-bold"> </td>
+                                    <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">13:50<br />15:25</td>
-                                    <td colspan="2"><i>(сем)</i> <span>Элективный курс по физической культуре и спорту</span> <i>каф. ФВ</i> <i></i>  </td>
+                                    <td class="text-info-bold"> </td>
+                                    <td class="text-primary"> </td>
                             </tr>
                             <tr>
                                 <td class="bg-grey text-nowrap">15:40<br />17:15</td>

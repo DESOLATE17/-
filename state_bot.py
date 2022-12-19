@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 import config
 import dbworker
-from parser import parse_user_datafile_bs
+from parser_1 import parse_user_datafile_bs
 
 
 # Токент бота
@@ -38,8 +38,6 @@ def cmd_reset(message):
     markup.add(telebot.types.InlineKeyboardButton(text='4я группа' , callback_data = 4))
     markup.add(telebot.types.InlineKeyboardButton(text='5я группа' , callback_data = 5))
     bot.send_message(message.chat.id, 'Приветики 2й курс ИУ5, выбери номер группы, чтобы глянуть расписание', reply_markup=markup)
-
-
 
 
 # Обработка номера группы
